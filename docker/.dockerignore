@@ -1,0 +1,86 @@
+# Git
+.git
+.gitignore
+.github
+.cursor
+dev/
+
+# Docker
+.docker
+.dockerignore
+
+# Specifically exclude sensitive files and directories within docker/
+docker/nginx/ssl/*.key
+docker/nginx/ssl/*.crt
+docker/nginx/ssl/*.pem
+docker/nginx/ssl/*.csr
+# Include the logs directory but not its contents
+docker/nginx/logs/*.log
+# Exclude htpasswd files
+docker/nginx/.htpasswd
+docker/nginx/.htpasswd.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursor/
+
+# Local development
+.DS_Store
+.coverage
+htmlcov/
+.pytest_cache/
+.coverage.*
+
+# Project specific
+tests/
+docs/
+output*.jpg
+*.log
+*.md
+!README.md
+images/
+.env.example
+
+# SSL Certificates and keys - critical for security
+*.pem
+*.key
+*.crt
+*.csr
+docker/nginx/ssl/
+
+# Nginx logs
+docker/nginx/logs/
+
+# Any other sensitive files
+*.htpasswd
