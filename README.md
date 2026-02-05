@@ -105,7 +105,7 @@ print(f"Image URL: {image_response.data[0].url}")
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/bigsk1/xai-api
+   git clone https://github.com/Sivakumar1016/XAI-API
    cd xai-api
    ```
 
